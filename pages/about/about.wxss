@@ -1,0 +1,210 @@
+/* pages/shop/shop.wxss */
+page{
+  font-size: 14px;
+}
+.main{
+  position: relative;
+  background-color: #f7f7f7;
+   /* background-color: #ccc; */
+}
+.red-dot{
+  margin:-60rpx 30rpx 0 30rpx;
+  width: 92%;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 100rpx;
+}
+
+.red-dot .top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+.red-dot .top::after{
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+}
+.red-dot .top::before{
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.wrap{
+  /* border:1px solid black; */
+  margin:-60rpx 30rpx 0 30rpx;
+  width: 92%;
+  /* position: absolute; */
+  /* z-index: 2; */
+  background-color: white;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+}
+
+.wrap .brief{
+  border: 1px solid #ccc;
+  margin: 100rpx 20rpx 50rpx 20rpx;
+  position: relative;
+  border-radius: 10px;
+}
+.brief .title{
+  position: absolute;
+  left: 50%;
+  top: -4%;
+  transform: translateX(-50%);
+  background-color: white;
+  white-space: nowrap;
+  padding: 0 140rpx;
+  z-index: 3;
+}
+
+.brief .title .place{
+  position: relative;
+}
+
+.brief .title text{
+  font-size: 18px;
+  color: red;
+  padding:4rpx 40rpx;
+  border: 1px solid red;
+  border-left-color: white;
+  border-right-color: white;
+}
+
+.brief .title .left {
+  position: absolute;
+  left: -50rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.brief .title .right{
+  position: absolute;
+  right: -50rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.brief .title .item view{
+  display: inline-block;
+  margin-left: 10rpx;
+  vertical-align: middle;
+}
+
+.brief .title .left view:nth-child(1), .brief .title .right view:nth-child(3){
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.brief .title .left view:nth-child(2), .brief .title .right view:nth-child(2){
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.brief .title .left view:nth-child(3), .brief .title .right view:nth-child(1){
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+.brief .content{
+  margin: 100rpx 20rpx 50rpx 20rpx;
+  white-space: pre-wrap;
+}
+
+.brief .content view{
+  line-height: 45rpx;
+  text-indent: 2rem;
+}
+
+.safeguard .brief{
+  border: none;
+}
+
+.four-big{
+  padding: 0 20rpx 0 20rpx;
+}
+.four-big .content{
+  border: 1px solid #ccc;
+  margin-top: 230rpx;
+  border-radius: 10px;
+}
+.four-big .content .item{
+  display: flex;
+}
+
+.four-big .content .item .link{
+  display: flex;
+  flex: 1;
+  padding: 20rpx;
+  align-items: center;
+  
+}
+
+.four-big .content .item .link image{
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+}
+
+.four-big .content .item .link .link-text{
+  font-size: 12px;
+  margin-left: 10rpx;
+  line-height: 40rpx;
+  color: #999999;
+}
+
+.four-big .content .item .link .link-text .textB{
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+.mlaoban{
+  margin-top: 50rpx;
+  padding: 0 20rpx 0 20rpx;
+}
+
+.mlaoban .content{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.mlaoban view{
+  margin: 30rpx 0;
+}
+
+.mlaoban .title{
+  color: red;
+  font-size: 18px;
+}
+
+.mlaoban input{
+  text-align: left;
+  margin: 0 20rpx 0 20rpx;
+}
+
+.footer{
+  margin-top: -28rpx;
+}

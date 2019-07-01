@@ -1,0 +1,111 @@
+<view class="main">
+  <view class="header">
+    <image class="header-bg" style="width:100%;height:320rpx;" src="../images/img_1.png"></image>
+  </view>
+  <view class="red-dot">
+    <!--左右小红点  -->
+    <view class="top"></view>
+  </view>
+  <view class="wrap" >
+    <!-- 公司简介 -->
+    <view class="brief">
+      <view class="title">
+        <view class="place">
+          <text>公司简介</text>
+         
+          <view class="left item">
+            <view></view>
+            <view></view>
+            <view></view>
+          </view>
+          
+          <view class="right item">
+            <view></view>
+            <view></view>
+            <view></view>
+          </view>
+        </view>
+      </view>
+      <view class="content">
+        <view>猫老板网店转让服务平台隶属于湖南通亮信息科技有限公司，主要提供淘宝网店转让、天猫网店转让交易服务、代入驻服务，公司 以第三方担保交易的模式为广大商家们提供了安全有效的服务，并以"促进网上交易良好发展"为使命提供专业的电子商务解决方案！ </view>
+        <view>猫老板小伙伴用心做好每件事，为了广大的电商爱好者和实践者能便捷、安全、贴心的转让服务，满足广大用户的购店需求而存在的一个网站。我们以服务提升价值，做中国顶级的虚拟资产服务平台！</view>
+      </view>
+    </view>
+    <!-- 四大保障 -->
+    <view class="safeguard">
+      <view class="brief">
+        <view class="title">
+          <view class="place">
+            <text>四大保障</text>
+            <!-- 左边的球 -->
+            <view class="left item">
+              <view></view>
+              <view></view>
+              <view></view>
+            </view>
+            <!-- 右边的球 -->
+            <view class="right item">
+              <view></view>
+              <view></view>
+              <view></view>
+            </view>
+          </view>
+        </view>
+      </view> 
+    </view> 
+    <view class="four-big">
+        <view class="content">
+          <view class="item">
+            <view class="link">
+              <image src="../images/our_03.png"></image>
+              <view class="link-text">
+                <view class="textB">资金保障</view>
+                <view>保障买卖双方权益</view>
+              </view>
+            </view>
+            <view class="link">
+              <image src="../images/our_05.png"></image>
+              <view class="link-text">
+                <view class="textB">交易保障</view>
+                <view>店铺不符全额退款</view>
+              </view>
+            </view>
+          </view>
+
+          <view class="item">
+            <view class="link">
+              <image src="../images/our_09.png"></image>
+              <view class="link-text">
+                <view class="textB">法律保障</view>
+                <view>交易签署法律合同</view>
+              </view>
+            </view>
+            <view class="link">
+              <image src="../images/our_10.png"></image>
+              <view class="link-text">
+                <view class="textB">服务保障</view>
+                <view>一对一定制服务</view>
+              </view>
+            </view>
+          </view>
+        </view>
+    </view>
+    <!-- 网店转让找猫老板 -->
+    <view class="mlaoban">
+      <view class="content">
+        <view class="title">网店转让就找猫老板</view>
+      <view>请填写您的需求或建议，我们会及时联系您</view>
+      <form bindsubmit="formSubmit">
+        <view><input name="username" placeholder="请填写您的称呼"></input> </view>
+        <view><input name="userconnect" placeholder="请填写您的电话"></input> </view>
+        <view><input name="suggest" placeholder="请填写您的需求"></input></view>
+        <view><button form-type="submit" type="warn" size="mini">提交需求</button> </view>
+      </form>
+      </view>
+    </view>
+  </view>
+
+  <view class="footer">
+      <image src="../images/our_13.png" style="width:100%;"></image>
+  </view>
+</view>

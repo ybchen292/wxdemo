@@ -1,0 +1,118 @@
+page{
+  font-size: 14px;
+}
+.header{
+  position: relative;
+}
+.header-bg{
+  width: 100%;
+}
+.header-icon{
+  width: 80%;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header-icon .item{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10rpx;
+}
+.header-icon .item text{
+  color: #fff;
+}
+.wrap{
+  margin: 20rpx 40rpx;
+}
+.wrap .safeguard .safeguard-item{
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.wrap .safeguard .item{
+  flex:1;
+  display: inline-flex;
+  position: relative;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  
+}
+.wrap .safeguard .item:nth-child(2){
+  margin-left: 15rpx;
+}
+.wrap .safeguard .item view:nth-child(1) text:nth-child(1){
+	font-size: 16px;
+	color: #282828;
+} 
+.wrap .safeguard .item view:nth-child(1) text:nth-child(2){
+  padding-top: 30rpx;
+} 
+.wrap .safeguard .item view:nth-child(1) text{
+  color: #999999;
+}
+.wrap .safeguard .item view:nth-child(1){
+  display: inline-flex;
+  flex-direction: column;
+  margin: 30rpx 20rpx 10rpx 20rpx;
+}
+
+.wrap .safeguard .item view:nth-child(2) image{
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+}
+
+.shop{
+  margin-top: 40rpx;
+  width: 100%;
+}
+
+.shop .shop-title{
+  font-size: 18px;
+}
+
+.shop .shop-item{
+  margin-top: 40rpx;
+}
+
+/* .shop .shop-item .item-top{
+  font-size: 16px;
+} */
+.shop .shop-item .item-down{
+  display: flex;
+  margin-top: 20rpx;
+  position:relative;
+}
+.shop .shop-item .item-down::after{
+  content: "";
+  position:absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -15rpx;
+  background-color: #999999;
+}
+.shop .shop-item .item-down view{
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.shop .shop-item .item-down view{
+  display:block;
+  color: #999999;
+  margin-bottom: 10rpx;
+  padding-right: 10rpx;
+}
+
+.shop .shop-item .item-down view:last-child{
+  position: relative;
+}
+.shop .shop-item .item-down text{
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

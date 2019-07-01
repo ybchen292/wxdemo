@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/help/help",
+    "pages/about/about",
+    "pages/home/home"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#ff2500",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "./pages/images/home.png",
+      "selectedIconPath": "./pages/images/home_active.png"
+    },{
+      "pagePath": "pages/about/about",
+      "text": "关于我们",
+      "iconPath": "./pages/images/shop.png",
+      "selectedIconPath": "./pages/images/shop_active.png"
+    },{
+      "pagePath": "pages/help/help",
+      "text": "帮助中心",
+      "iconPath": "./pages/images/msg.png",
+      "selectedIconPath": "./pages/images/msg_active.png"
+    }]
+  }
+}
