@@ -48,7 +48,8 @@ page{
 
 .wrap{
   /* border:1px solid black; */
-  margin:-60rpx 30rpx 0 30rpx;
+  margin:-60rpx 30rpx 0rpx 30rpx;
+  padding-bottom: 100rpx; 
   width: 92%;
   /* position: absolute; */
   /* z-index: 2; */
@@ -130,6 +131,7 @@ page{
 .brief .content{
   margin: 100rpx 20rpx 50rpx 20rpx;
   white-space: pre-wrap;
+  color: #282828;
 }
 
 .brief .content view{
@@ -145,7 +147,7 @@ page{
   padding: 0 20rpx 0 20rpx;
 }
 .four-big .content{
-  border: 1px solid #ccc;
+  border: 1px solid #d6d6d6;
   margin-top: 230rpx;
   border-radius: 10px;
 }
@@ -186,7 +188,7 @@ page{
 }
 
 .mlaoban .content{
-  border: 1px solid #ccc;
+  border: 1px solid #d6d6d6;
   border-radius: 10px;
   text-align: center;
 }

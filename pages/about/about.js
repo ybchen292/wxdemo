@@ -21,6 +21,7 @@ Page({
           })
         }
       },
+      
       fail: function(res) {
         wx.showModal({
           title: '温馨提示',
