@@ -1,6 +1,6 @@
 /* pages/shop/shop.wxss */
 page{
-  font-size: 14px;
+  font-size: 24rpx;
 }
 .main{
   position: relative;
@@ -80,7 +80,7 @@ page{
 }
 
 .brief .title text{
-  font-size: 18px;
+  font-size: 36rpx;
   color: red;
   padding:4rpx 40rpx;
   border: 1px solid red;
@@ -170,14 +170,14 @@ page{
 }
 
 .four-big .content .item .link .link-text{
-  font-size: 12px;
+  font-size: 24rpx;
   margin-left: 10rpx;
   line-height: 40rpx;
   color: #999999;
 }
 
 .four-big .content .item .link .link-text .textB{
-  font-size: 14px;
+  font-size: 28rpx;
   font-weight: bold;
   color: black;
 }
@@ -199,7 +199,7 @@ page{
 
 .mlaoban .title{
   color: red;
-  font-size: 18px;
+  font-size: 36rpx;
 }
 
 .mlaoban input{

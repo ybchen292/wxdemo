@@ -1,10 +1,10 @@
 page{
-  font-size: 14px;
+  font-size: 24rpx;
 }
 
 .main .btn{
   display: flex;
-  font-size: 14px;
+  font-size: 24rpx;
   justify-content: space-between;
   margin-top: 15rpx;
   border: none;

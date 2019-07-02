@@ -1,0 +1,290 @@
+<view class="main">
+    <view class="header">
+        <view class="title">
+            我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题我是标题
+        </view>
+        <view class="show">
+            <view class="top">
+                <view>年　费：<text>￥50000.00</text></view>
+                <view>
+                <image src="../images/star.png" style="width:64rpx;height:64rpx;"></image>
+                收藏
+                </view>
+            </view>
+            <view class="down">
+                <view>消保金：<text>￥50000.00</text></view>
+                <view>￥5000000.00</view>
+            </view>
+        </view>
+        <!-- 分隔符 -->
+        <view class="incise-w"></view>
+        <!-- 标签 -->
+        <view class="melabel">
+            <text>我是标签</text>
+            <text>我是标签</text>
+            <text>我是标签</text>
+            <text>我是标签</text>
+            <text>我是标签</text>
+        </view>
+    </view>
+
+    <!-- 编号 -->
+    <view class="serial">
+        <view class="title">网店编号：3P01A22Y3518880V0101YACH</view>
+        <view class="content">
+            <view class="item">
+                <view>主营类目：<text>服饰鞋包</text></view>
+                <view>商城类型：<text>旗舰店</text></view>
+            </view>
+            <view class="item">
+                <view>商标类型：<text>R标</text></view>
+                <view>所在地区：<text>西南地区</text></view>
+            </view>
+            <view class="item">
+                <view>商标属性：<text>自有商标</text></view>
+                <view>纳税类型：<text>一般纳税人</text></view>
+            </view>
+            <view class="item">
+                <view>是否贷款：<text>否</text></view>
+                <view>是否带货：<text>否</text></view>
+            </view>
+            <view class="item">
+                <view>连带过户：<text>是</text></view>
+                <view>提供货源：<text>否</text></view>
+            </view>
+            <view class="item">
+                <view>入驻时间：<text>2018</text></view>
+                <view>收藏人气：<text>0</text></view>
+            </view>
+            <view class="item">
+                <view>售假违规：<text>0分</text></view>
+                <view>一般违规：<text>0分</text></view>
+            </view>
+            <view class="item">
+                <view>严重违规：<text>0分</text></view>
+                <!-- <view>主营类目：<text>服饰鞋包</text></view> -->
+            </view>
+        </view>
+    </view>
+
+    <!-- 顾问 -->
+    <view class="counselor">
+        <view class="left">
+            <image src="../images/counselor_icon.png"  style="width:160rpx;height:100%;"></image>
+        </view>
+        <view class="center">
+            <view>金牌顾问 - 丁小三</view>
+            <view><text>电话：18569423739 </text><text>呼叫</text></view>
+            <view><text>Q Q：8888888888 </text><text>复制</text></view>
+        </view>
+        <view class="right">
+            <view class="item">
+                <image src="../images/counselor_tel.png" style="width:45rpx;height:45rpx"></image>
+                联系
+            </view>
+        </view>
+    </view>
+
+    <!-- 卖家描述 -->
+    <view class="describe">
+        <view class="title">
+            <text>卖家描述</text>
+            <text>店铺截图</text>
+            <text>公司信息</text>
+            <text>购买流程</text>
+        </view>
+        <!-- 分割符 -->
+        <view class="incise-w"></view>
+        <view class="content">
+            <view class="content-title">
+                <view></view>
+                <view>卖家描述</view>
+            </view>
+            <view class="down">
+                我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述
+            </view>
+        </view>
+    </view>
+
+    <!-- 店铺截图 -->
+    <view class="shot">
+        <view class="title">
+                <view></view>
+                <view>店铺截图</view>
+        </view>
+        <view class="banner">
+            <swiper autoplay="true" circular="true" style="height:340rpx">
+                <swiper-item>
+                    <image bindtap="bannertap" data-src="../images/shot_banner.png" src="../images/shot_banner.png"  mode="widthFix" style="width:100%"></image>
+                </swiper-item>
+                <swiper-item>
+                    <image bindtap="bannertap" data-src="../images/shot_banner.png" src="../images/shot_banner.png" mode="widthFix" style="width:100%"></image>
+                </swiper-item>
+            </swiper>
+        </view>
+    </view>
+
+    <!-- 企业信息 -->
+    <view class="companymsg">
+        <view class="title">
+                <view></view>
+                <view>企业信息</view>
+        </view>
+        <view class="msg">
+            <view class="content">
+                <view class="item">
+                    <view>经营状态：<text>存续</text></view>
+                    <view>公司类型：<text>有限责任公司</text></view>
+                </view>
+                <view class="item">
+                    <view>成立时间：<text>2018</text></view>
+                    <view>注册资本：<text>￥10000000</text></view>
+                </view>
+                <view class="item">
+                    <view>股东人数：<text>1</text></view>
+                    <view>纳税类型：<text>一般纳税人</text></view>
+                </view>
+                <view class="item">
+                    <view>商标类型：<text>R标</text></view>
+                    <view>商标大类：<text>30类</text></view>
+                </view>
+                <view class="item">
+                    <view>商标属性：<text>自有商标</text></view>
+                    <view>申请时间：<text>2018</text></view>
+                </view>
+                <view class="item">
+                    <view>连带过户：<text>是</text></view>
+                    <view>经营状态：<text>在售</text></view>
+                </view>
+            </view>
+        </view>
+        <view class="dredge">
+            已开通类目：
+            <text>1201,1202,1204，1111,1111,1111,1111,1111，1111,1111,1111,1111.</text>
+        </view>
+        <view class="evaluate">
+            <view class="item">
+                宝贝与描述相符
+                <view>高</view>
+            </view>
+            <view class="item">
+                卖家的服务态度
+                <view>高</view>
+            </view>
+            <view class="item">
+                卖家的发货速度
+                <view>高</view>
+            </view>
+        </view>
+    </view>
+
+    <!-- 购买流程 -->
+    <view class="buy">
+        <view class="title">
+            <view></view>
+            <view>购买流程</view>
+        </view>
+        <view class="content">
+            <view class="item">
+                <view class="item-child">
+                    <view>01</view>
+                    <view>
+                        <text>选择网店</text>
+                        <text>选择适合的网店</text>
+                    </view>
+                </view>
+                <view class="item-child">
+                    <view>02</view>
+                    <view>
+                        <text>选择网店</text>
+                        <text>选择适合的网店</text>
+                    </view>
+                </view>
+            </view>
+            <!-- 分割符 -->
+            <view class="incise-w"></view>
+
+            <view class="item">
+                <view class="item-child">
+                    <view>03</view>
+                    <view>
+                        <text>选择网店</text>
+                        <text>选择适合的网店</text>
+                    </view>
+                </view>
+                <view class="item-child">
+                    <view>04</view>
+                    <view>
+                        <text>选择网店</text>
+                        <text>选择适合的网店</text>
+                    </view>
+                </view>
+            </view>
+            <!-- 分割符 -->
+            <view class="incise-w"></view>
+
+            <view class="item">
+                <view class="item-child">
+                    <view>05</view>
+                    <view>
+                        <text>选择网店</text>
+                        <text>选择适合的网店</text>
+                    </view>
+                </view>
+                <view class="item-child">
+                    <view>06</view>
+                    <view>
+                        <text>选择网店</text>
+                        <text>选择适合的网店</text>
+                    </view>
+                </view>
+            </view>
+            <!-- 竖切割符 -->
+            <view class="incise-h"></view>
+        </view>
+    </view>
+
+    <!-- 推荐店铺 -->
+    <view class="shop">
+        <view class="title">
+            <view></view>
+            <view>推荐店铺</view>
+        </view>
+        <view class="shop-item">
+            <view class="item-top">
+                <text>江浙沪地区女装天猫旗舰店，一千万营业额动态全红...</text>
+            </view>
+            <view class="item-down">
+                <view>
+                    <view>类型：专营店</view>
+                    <view>商标：3C数码</view>
+                </view>
+                <view>
+                    <view>类目：R标</view>
+                    <view>地区：华中地区</view>
+                </view>
+                <view>
+                    <text>￥123.4万</text>
+                </view>
+            </view>
+            <view class="item-down">
+                <view>
+                    <view>类型：专营店</view>
+                    <view>商标：3C数码</view>
+                </view>
+                <view>
+                    <view>类目：R标</view>
+                    <view>地区：华中地区</view>
+                </view>
+                <view>
+                    <text>￥123.4万</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 遮罩 -->
+    <view class="shade" wx:if="{{isshade}}">
+        <image src="../images/banner_1.png"></image>
+    </view>
+
+</view>
