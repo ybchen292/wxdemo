@@ -1,9 +1,11 @@
 {
   "pages": [
-    "pages/particulars/particulars",
+    "pages/listsel/lisgsel",
     "pages/help/help",
+    "pages/particulars/particulars",
     "pages/about/about",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/helplist/helplist"
     
   ],
   "window": {
@@ -27,15 +29,15 @@
       "iconPath": "./pages/images/shop.png",
       "selectedIconPath": "./pages/images/shop_active.png"
     },{
-      "pagePath": "pages/help/help",
-      "text": "帮助中心",
-      "iconPath": "./pages/images/msg.png",
-      "selectedIconPath": "./pages/images/msg_active.png"
-    },{
       "pagePath": "pages/particulars/particulars",
       "text": "详情页",
       "iconPath": "./pages/images/msg.png",
       "selectedIconPath": "./pages/images/msg_active.png"
+    },{
+        "pagePath": "pages/help/help",
+        "text": "帮助中心",
+        "iconPath": "./pages/images/msg.png",
+        "selectedIconPath": "./pages/images/msg_active.png"
     }]
   }
 }

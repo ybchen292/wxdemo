@@ -1,0 +1,27 @@
+page{
+  font-size: 24rpx;
+}
+
+.main .btn{
+  display: flex;
+  font-size: 24rpx;
+  justify-content: space-between;
+  margin-top: 15rpx;
+  border: none;
+  background:none;
+  position: relative;
+}
+
+.main .btn::after{
+  border: none;
+}
+
+.main .btn::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15rpx;
+  right: 15rpx;
+  height: 1px;
+  background-color: #d6d6d6;
+}

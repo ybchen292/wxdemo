@@ -1,0 +1,57 @@
+page{
+    font-size: 24rpx;
+}
+
+.header .top{
+    margin: 30rpx;
+}
+
+.header .top .query{
+    border: 1px solid #c6c6c6;
+    border-radius: 10rpx;
+    display: flex;
+    position: relative;
+    padding: 10rpx 0;
+}
+
+.header .top .query .left{
+    display: flex;
+    margin-left: 20rpx;
+    align-items: center;
+}
+
+.header .top .query .right{
+    display: flex;
+    position: absolute;
+    right: 0;
+    align-items: center;
+}
+
+.header .top .query .right view{
+    margin: 0 0 0 30rpx;
+}
+
+.header .top .query .right button{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.header .top .query .right button::after{
+    border: none;
+    
+}
+
+.header .classify{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30rpx;
+}
+
+.header .classify .item{
+    font-size: 28rpx;
+}
+
+.header .classify .item image{
+    margin-left: 20rpx;
+}

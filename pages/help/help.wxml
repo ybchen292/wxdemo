@@ -1,8 +1,122 @@
 <view class="main">
-  <block wx:for="{{datas}}" wx:key="{{index}}">
-  <button class="btn">
-    <view>{{item.title}}</view>
-    <view><image src="../images/right.png" style="width:16px;height:16px;"></image></view>
-  </button>
-  </block>
+    <view class="header">
+        <image src="../images/help_top.png" style="width:100%; height:320rpx;"></image>
+        <!-- 置顶问题 -->
+        <view class="stick" >
+            <navigator url="../helplist/helplist" hover-class="none">
+                <image src="../images/help_01.png" style="width:48rpx; height:48rpx;"></image>
+                <text>置顶问题（如猫老板充值问题）</text>
+            </navigator>
+        </view>
+        <!-- 分隔符 -->
+        <view class="incise-w"></view>
+        <!-- 各类网店 -->
+        <view class="all-shop">
+            <view class="item">
+                <image src="../images/help_02.png" style="width:60rpx; height:60rpx;"></image>
+                <text>天猫网店</text>
+            </view>
+            <view class="item">
+                <image src="../images/help_02.png" style="width:60rpx; height:60rpx;"></image>
+                <text>天猫网店</text>
+            </view>
+            <view class="item">
+                <image src="../images/help_02.png" style="width:60rpx; height:60rpx;"></image>
+                <text>天猫网店</text>
+            </view>
+        </view>
+    </view>
+    <view class="all-title">
+        <view class="title">
+            <view class="left">
+                <image src="../images/help_05.png" style="width:60rpx; height:60rpx;"></image>
+                <text>买家帮助</text>
+                <image src="../images/help_06.png" style="width:30rpx; height:20rpx;"></image>
+                
+            </view>
+            <view class="right">
+                <!-- 竖切割符 -->
+                <view class="incise-h"></view>
+                <view>网店购买流程</view>
+                <!-- 分隔符 -->
+                <view class="incise-w"></view>
+                <view>服务费说明</view>
+                <!-- 分隔符 -->
+                <view class="incise-w"></view>
+                <view>店铺买来被盗怎么办</view>
+                <!-- 分隔符 -->
+                <view class="incise-w"></view>
+                <view>购买店铺后不满意可以退吗</view>
+            </view>
+        </view>
+
+        <view class="title">
+            <view class="left">
+                <image src="../images/help_07.png" style="width:60rpx; height:60rpx;"></image>
+                <text>卖家帮助</text>
+                <image src="../images/help_06.png" style="width:30rpx; height:20rpx;"></image>
+                
+            </view>
+            <view class="right">
+                <!-- 竖切割符 -->
+                <view class="incise-h"></view>
+                <view>店铺出售流程</view>
+                <!-- 分隔符 -->
+                <view class="incise-w"></view>
+                <view>卖家非法操作店铺会牵连我吗</view>
+                <!-- 分隔符 -->
+                <view class="incise-w"></view>
+                <view>售后怎么才能收到出售款</view>
+            </view>
+        </view>
+
+        <view class="title">
+            <view class="left">
+                <image src="../images/help_08.png" style="width:60rpx; height:60rpx;"></image>
+                <text>安全保障</text>
+                <image src="../images/help_06.png" style="width:30rpx; height:20rpx;"></image>
+                
+            </view>
+            <view class="right">
+                <!-- 竖切割符 -->
+                <view class="incise-h"></view>
+                <view>合同的法律效力</view>
+                <!-- 分隔符 -->
+                <view class="incise-w"></view>
+                <view>合同流程</view>
+                <!-- 分隔符 -->
+                <view class="incise-w"></view>
+                <view>担保交易</view>
+                <!-- 分隔符 -->
+                <view class="incise-w"></view>
+                <view>证件照片隐私保护</view>
+                <!-- 分隔符 -->
+                <view class="incise-w"></view>
+                <view>电子合同签约流程</view>
+            </view>
+        </view>
+
+        <view class="title">
+            <view class="left">
+                <image src="../images/help_05.png" style="width:60rpx; height:60rpx;"></image>
+                <text>账号帮助</text>
+                <image src="../images/help_06.png" style="width:30rpx; height:20rpx;"></image>
+                
+            </view>
+            <view class="right">
+                <!-- 竖切割符 -->
+                <view class="incise-h"></view>
+                <view>账号注册</view>
+                <!-- 分隔符 -->
+                <view class="incise-w"></view>
+                <view>怎么实名认证</view>
+                <!-- 分隔符 -->
+                <view class="incise-w"></view>
+                <view>怎么认证手机</view>
+                <!-- 分隔符 -->
+                <view class="incise-w"></view>
+                <view>用户组册协议及法律说明</view>
+            </view>
+        </view>
+    </view>
 </view>

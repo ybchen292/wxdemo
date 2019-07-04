@@ -2,26 +2,91 @@ page{
   font-size: 24rpx;
 }
 
-.main .btn{
-  display: flex;
-  font-size: 24rpx;
-  justify-content: space-between;
-  margin-top: 15rpx;
-  border: none;
-  background:none;
-  position: relative;
+.main{
+  background-color: #f7f7f7;
 }
 
-.main .btn::after{
-  border: none;
+.header{
+    background-color: #fff;
 }
 
-.main .btn::before{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 15rpx;
-  right: 15rpx;
-  height: 1px;
-  background-color: #d6d6d6;
+.header .stick{
+    display: flex;
+    padding: 30rpx 0 30rpx 40rpx;
+}
+
+.header .stick image{
+    vertical-align: text-bottom;
+}
+
+.header .stick text{
+    margin-left: 20rpx;
+    color: #e04e4e;
+    font-size: 32rpx;
+}
+
+
+
+
+.header .all-shop{
+    display: flex;
+}
+
+.header .all-shop .item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30rpx 0;
+    color: #282828;
+}
+
+.header .all-shop .item text{
+    margin-top: 10rpx;
+    
+}
+
+.all-title{
+    margin: 30rpx;
+    margin-bottom: 0;
+}
+
+.all-title .title{
+    background: #fff;
+    display: flex;
+    margin-top: 40rpx;
+}
+
+.all-title .title .left{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 50rpx 10rpx;
+    line-height: 80rpx;
+    font-size: 32rpx;
+    color: red;
+    justify-content: center;
+}
+
+.all-title .title .right{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    line-height: 80rpx;
+    position: relative;
+    color: #282828;
+}
+
+.all-title .title .right view{
+    text-indent: 1rem;
+}
+
+.all-title .title .right .incise-h{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #d6d6d6;
 }

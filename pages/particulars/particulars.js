@@ -5,13 +5,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-      isshade:false
+      isshade:false,
+      shadeimg:''
   },
   bannertap:function(e){
       let src=e.target.dataset.src;
-      console.log(src);
-      console.log(e);
+      this.setData({
+          shadeimg:src,
+          isshade:true
+      })
   },  
+  shadetap:function(){
+      this.setData({
+          shadeimg: "",
+          isshade: false
+      })
+  },
+  shadeimgtap:function(){
+  },
+  skiptap:function(e){
+      let item=e.target.dataset.id;
+      const query = wx.createSelectorQuery()
+      query.select('.'+item).boundingClientRect()
+      query.selectViewport().scrollOffset()
+      query.exec(function (res) {
+          let scrollTop = res[0].top + res[1].scrollTop;
+          wx.pageScrollTo({
+              scrollTop: scrollTop,
+              duration: 200
+          })
+        //   res[0].top       // #the-id节点的上边界坐标
+        //   res[1].scrollTop // 显示区域的竖直滚动位置
+      })
+  }, 
   /**
    * 生命周期函数--监听页面加载
    */

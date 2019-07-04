@@ -8,3 +8,14 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.incise-w{
+    height: 1px;
+    background-color: #d6d6d6;
+}
+
+.incise-h{
+    /* height: 100%; */
+    width: 1px;
+    background-color: #d6d6d6;
+}

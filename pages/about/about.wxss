@@ -5,7 +5,6 @@ page{
 .main{
   position: relative;
   background-color: #f7f7f7;
-   /* background-color: #ccc; */
 }
 .red-dot{
   margin:-60rpx 30rpx 0 30rpx;

@@ -79,7 +79,7 @@
         </view>
         <view class="right">
             <view class="item">
-                <image src="../images/counselor_tel.png" style="width:45rpx;height:45rpx"></image>
+                <image src="../images/counselor_tel.png" style="width:36rpx;height:36rpx"></image>
                 联系
             </view>
         </view>
@@ -88,17 +88,17 @@
     <!-- 卖家描述 -->
     <view class="describe">
         <view class="title">
-            <text>卖家描述</text>
-            <text>店铺截图</text>
-            <text>公司信息</text>
-            <text>购买流程</text>
+            <text bindtap="skiptap" data-id="mjms">卖家描述</text>
+            <text bindtap="skiptap" data-id="dpjt">店铺截图</text>
+            <text bindtap="skiptap" data-id="qyxx">企业信息</text>
+            <text bindtap="skiptap" data-id="gmlc">购买流程</text>
         </view>
         <!-- 分割符 -->
         <view class="incise-w"></view>
         <view class="content">
             <view class="content-title">
                 <view></view>
-                <view>卖家描述</view>
+                <view class="mjms">卖家描述</view>
             </view>
             <view class="down">
                 我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述我是描述
@@ -110,7 +110,7 @@
     <view class="shot">
         <view class="title">
                 <view></view>
-                <view>店铺截图</view>
+                <view class="dpjt">店铺截图</view>
         </view>
         <view class="banner">
             <swiper autoplay="true" circular="true" style="height:340rpx">
@@ -128,7 +128,7 @@
     <view class="companymsg">
         <view class="title">
                 <view></view>
-                <view>企业信息</view>
+                <view class="qyxx">企业信息</view>
         </view>
         <view class="msg">
             <view class="content">
@@ -182,7 +182,7 @@
     <view class="buy">
         <view class="title">
             <view></view>
-            <view>购买流程</view>
+            <view class="gmlc">购买流程</view>
         </view>
         <view class="content">
             <view class="item">
@@ -283,8 +283,8 @@
         </view>
     </view>
     <!-- 遮罩 -->
-    <view class="shade" wx:if="{{isshade}}">
-        <image src="../images/banner_1.png"></image>
+    <view class="shade" wx:if="{{isshade}}" bindtap="shadetap">
+        <image src="{{shadeimg}}" style="width:640rpx;height:480rpx;" catchtap="shadeimgtap" ></image>
     </view>
 
 </view>

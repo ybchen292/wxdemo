@@ -1,0 +1,8 @@
+<view class="main">
+  <block wx:for="{{datas}}" wx:key="{{index}}">
+  <button class="btn">
+    <view>{{item.title}}</view>
+    <view><image src="../images/right.png" style="width:16px;height:16px;"></image></view>
+  </button>
+  </block>
+</view>
