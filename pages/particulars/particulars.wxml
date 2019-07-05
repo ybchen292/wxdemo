@@ -267,6 +267,11 @@
                     <text>￥123.4万</text>
                 </view>
             </view>
+        </view>
+        <view class="shop-item">
+            <view class="item-top">
+                <text>江浙沪地区女装天猫旗舰店，一千万营业额动态全红...</text>
+            </view>
             <view class="item-down">
                 <view>
                     <view>类型：专营店</view>

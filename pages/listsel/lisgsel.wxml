@@ -15,22 +15,129 @@
         </view>
         <view class="classify">
             <view class="item" data-item="1" bindtap="classifytap">
-                <text style="color:{{classifytext1}}">价格</text>
-                <image  src="{{classifyicon1}}" style="width:30rpx;height:20rpx;"></image>
-                <!-- <image wx:else src="../images/listsel_10.png" style="width:30rpx;height:20rpx;"></image> -->
+                <block wx:if="{{classifyblk1}}">
+                <text>价格</text>
+                <image  src="../images/listsel_07.png" style="width:30rpx;height:20rpx;"></image>
+                </block>
+                <block wx:else>
+                <text style="color:red;">价格</text>
+                <image src="../images/listsel_10.png" style="width:30rpx;height:20rpx;"></image>
+                </block>
             </view>
             <view class="item" data-item="2" bindtap="classifytap">
-                <text style="color:{{classifytext2}}">排序</text>
-                <image src="{{classifyicon2}}" style="width:30rpx;height:20rpx;"></image>
-                <!-- <image wx:else src="../images/listsel_10.png" style="width:30rpx;height:20rpx;"></image> -->
+                <block wx:if="{{classifyblk2}}">
+                <text>排序</text>
+                <image  src="../images/listsel_07.png" style="width:30rpx;height:20rpx;"></image>
+                </block>
+                <block wx:else>
+                <text style="color:red;">排序</text>
+                <image  src="../images/listsel_10.png" style="width:30rpx;height:20rpx;"></image>
+                </block>
             </view>
             <view class="item" data-item="3" bindtap="classifytap">
-                <text style="color:{{classifytext3}}">更多</text>
-                <image src="{{classifyicon3}}" style="width:30rpx;height:20rpx;"></image>
-                <!-- <image wx:else src="../images/listsel_10.png" style="width:30rpx;height:20rpx;"></image> -->
+                <block wx:if="{{classifyblk3}}">
+                <text>更多</text>
+                <image  src="../images/listsel_07.png" style="width:30rpx;height:20rpx;"></image>
+                 </block>
+                <block wx:else>
+                <text style="color:red;">更多</text>
+                <image src="../images/listsel_10.png" style="width:30rpx;height:20rpx;"></image>
+                </block>
             </view>
         </view>
         <!-- 分隔符 -->
         <view class="incise-w"></view>
     </view>
+
+    <!-- 内容 -->
+    <view class="content">
+        <!-- 价格 -->
+        <block wx:if="{{!classifyblk1}}">
+            <view class="price">
+                <view class="condition">
+                    <view class="item">
+                        <text>全部</text>
+                        <text>3万以内</text>
+                        <text>3——5万</text>
+                        <text>5——10万</text>
+                        <text>10——15万</text>
+                    </view>
+                    <view class="item">
+                        <text>自定义</text>
+                        <input></input>
+                        <input></input>
+                        <button size="mini" type="warn">确定</button>
+                    </view>
+                    <view class="incise-w"></view>
+                </view>
+            </view>
+        </block>
+
+        <!-- 排序 -->
+        <block wx:elif="{{!classifyblk2}}">
+            <view class="order">
+                <view class="condition">
+                    <text>默认排序</text>
+                    <text>最新发布</text>
+                    <text>最低价格</text>
+                    <text>最多浏览</text>
+                </view>
+                <view class="incise-w"></view>
+            </view>
+        </block>
+
+        <!-- 更多 -->
+        <block wx:elif="{{!classifyblk3}}">
+            <scroll-view style="width:100%;height:900rpx;" scroll-y="true">
+                <view class="more">
+                    <view class="condition">
+                        <block wx:for="{{listval}}" wx:for-item="item1" wx:for-index="index1" wx:key="{{index1}}">
+                            <view class="item">
+                                <view class="title">
+                                    <text>{{item1.title}}</text>
+                                </view>
+                                <view class="content" wx:for="{{item1.wrap}}" wx:for-item="item2" wx:for-index="index2" 
+                                wx:key="{{index2}}">
+                                    <text data-id="{{index1}}{{index2}}{{index3}}"
+                                        style="color:{{item3.color}};border-color:{{item3.color}}" wx:for="{{item2}}"                                                       wx:for-item="item3" wx:for-index="index3" 
+                                        wx:key="{{index3}}" bindtap="more">{{item3.item}}
+                                    </text>
+                                </view>`
+                            </view>
+                            <view class="incise-w"></view>
+                        </block>
+                    </view>
+                    <view class="down">
+                        <button>清空筛选条件</button>
+                        <button type="warn">确定</button>
+                    </view>
+                </view>
+            </scroll-view>
+        </block>
+
+         <!-- 主内容 -->
+        <block wx:else>
+            <view class="shop">
+                <view class="shop-item">
+                    <view class="item-top">
+                        <text>江浙沪地区女装天猫旗舰店，一千万营业额动态全红...</text>
+                    </view>
+                    <view class="item-down">
+                        <view>
+                            <view>类型：专营店</view>
+                            <view>商标：3C数码</view>
+                        </view>
+                        <view>
+                            <view>类目：R标</view>
+                            <view>地区：华中地区</view>
+                        </view>
+                        <view>
+                            <text>￥123.4万</text>
+                        </view>
+                    </view>
+                 </view>
+            </view>
+        </block>
+    </view>
+    
 </view>
